@@ -1,0 +1,27 @@
+Phrase Analysis algorithm function:
+
+     Declare the variables:
+         lengthPhrase <- 0
+         numberWords <- 0
+         numberVowels <- 0
+         isLastCharacter <- False
+        
+     For each character in the sentence:
+         sentenceLength <- sentenceLength + 1
+        
+         If character is a vowel (a, e, i, o, u, or y, lowercase or uppercase):
+             numberVowels <- numberVowels + 1
+            
+         If character is a space OR character is the last character of the sentence:
+             If character is a space:
+                 isLastCharacter <- False
+             Otherwise:
+                 isLastCharacter <- True
+            
+             If isLastChar is True AND character is not a space:
+                 numWords <- numWords + 1
+    
+     Display "Sentence contains ", numberWords, " word(s)."
+     Display "The number of characters in the sentence is ", sentenceLength, "."
+     Print "The number of vowels in the sentence is ", numberVowels, "."
+End Function
